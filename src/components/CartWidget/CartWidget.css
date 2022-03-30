@@ -1,0 +1,12 @@
+.cartWidget{
+    margin: 0.3rem 1rem;
+    padding: 0.5rem;
+    border-radius: 10%;
+    background: #505b72;
+    display: flex;
+}
+
+.icon{
+    margin: 0.5rem;
+    width: 30px;
+}

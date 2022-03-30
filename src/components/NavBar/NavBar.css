@@ -13,20 +13,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #94b8ff;
-    color: #0f3544;
+    background: linear-gradient(90deg, #282c34, #94b8ff);
 }
 
 .navBrand{
     margin: 0.5rem;
     padding: 0.5rem;
     font-size: 2rem;
+    color: #94b8ff;
 }
 
 .navItem{
     list-style: none;
     text-decoration: none;
-    color: #0f3544;
+    color: #282c34;
     margin: 0 0.5rem;
     padding: 0 0.5rem;
     font-size: 1.5rem;
