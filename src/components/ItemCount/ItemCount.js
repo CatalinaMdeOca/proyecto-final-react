@@ -4,10 +4,6 @@ import './ItemCount.css'
 const Counter = ( {initial, stock, onAdd} ) => {
     let [count, setCount] = useState(initial);
 
-    // useEffect(() => {
-    //     console.log('Se montó el cmponente');
-    // }, [])
-
     const increment = () => {
         if (count < stock) {
             setCount(count + 1);            

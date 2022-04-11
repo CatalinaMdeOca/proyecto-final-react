@@ -3,7 +3,6 @@
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    margin: 20px;
 }
 
 .itemCountDiv .divAgregar{
@@ -16,8 +15,9 @@
     margin: 0.5rem;
     background: #94b8ff;
     color: #282c34;
-    border: none;
+    border: solid #282c34 1.5px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .itemCountDiv button{
@@ -26,8 +26,14 @@
     margin: 0.5rem;
     background: #94b8ff;
     color: #282c34;
-    border: none;
+    border: solid #282c34 1.5px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.itemCountDiv button:hover{
+    background: #282c34;
+    color: #94b8ff;
 }
 
 .itemCountDiv p{
