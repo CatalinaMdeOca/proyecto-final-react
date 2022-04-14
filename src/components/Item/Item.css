@@ -22,3 +22,18 @@
     margin: 15px;
     font-size: 18px;
 }
+
+.card .verDetail{
+    margin: 0.5rem;
+    padding: 5px;
+    background: #94b8ff;
+    color: #282c34;
+    border: solid #282c34 1.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .verDetail:hover{
+    background: #282c34;
+    color: #94b8ff;
+}

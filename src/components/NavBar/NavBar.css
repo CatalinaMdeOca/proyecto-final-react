@@ -20,14 +20,21 @@
     padding: 0.5rem;
     font-size: 2rem;
     color: #94b8ff;
+    text-decoration: none;
 }
 
 .navItem{
     list-style: none;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    float: right;
+}
+
+.navLink{
     text-decoration: none;
     color: #282c34;
     margin: 0 0.5rem;
     padding: 0 0.5rem;
     font-size: 1.5rem;
-    float: right;
 }
