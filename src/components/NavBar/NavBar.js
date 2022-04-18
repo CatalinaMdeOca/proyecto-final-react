@@ -25,6 +25,7 @@ const NavBar = () => {
                 </ul> */}
                 
                 <div>
+                    <NavLink to='/' className="navLink">Todos</NavLink>
                     { categories.map(cat => <NavLink key={cat.id} to={`/category/${cat.id}`} className="navLink">{cat.description}</NavLink>) }
                 </div>
                 <CartWidget />

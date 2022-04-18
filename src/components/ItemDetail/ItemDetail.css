@@ -1,7 +1,13 @@
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 .cardDetail{
     background: #94b8ff;
     color: #282c34;
-    width: 250px;
+    width: 350px;
     margin: 0 10px;
     margin-bottom: 10px;
     padding: 10px 10px;
@@ -22,4 +28,27 @@
 .cardDetail h5{
     margin: 15px;
     font-size: 18px;
+}
+
+.cardDetail p{
+    margin: 15px;
+    font-size: 18px;
+}
+
+.toCart{
+    text-decoration: none;
+    color: #282c34;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 18px;
+    background: #94b8ff;
+    color: #282c34;
+    border: solid #282c34 1.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toCart:hover{
+    background: #282c34;
+    color: #94b8ff;
 }
