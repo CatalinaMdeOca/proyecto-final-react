@@ -11,7 +11,7 @@ const Counter = ( {initial, stock, onAdd} ) => {
     }
 
     const decrement = () => {
-        if (count > 0) {
+        if (count > initial) {
             setCount(count - 1);           
         }
     }
@@ -22,7 +22,7 @@ const Counter = ( {initial, stock, onAdd} ) => {
             <p>{count}</p>
             <button onClick={decrement}>-</button>
             <div className='divAgregar'>
-                <button className='buttonAgregar' onClick={() => {onAdd(count); setCount(0)}}>Agregar al carrito</button>
+                <button className='buttonAgregar' onClick={() => {onAdd(count); setCount(initial)}}>Agregar al carrito</button>
             </div>
             
         </div>
