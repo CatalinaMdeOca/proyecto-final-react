@@ -23,8 +23,9 @@ const ItemDetail = ({ id, name, price, img, sinopsis, stock }) => {
                     <img src={img} alt={name} />
                 </picture>
                 <h3>{ name }</h3>
-                <h5>${ price }</h5>
+                <h5>$ { price }</h5>
                 <p>{sinopsis}</p>
+                <Counter initial={1} stock={stock} onAdd={handleOnAdd} />
                 {/* { isInCart(id) ? <Link to={`/cart`} className='toCart' > Ir al carrito </Link> : <Counter initial={1} stock={stock} onAdd={handleOnAdd} /> } */}
                 { isInCart(id) ?  
                     <div>
@@ -32,7 +33,7 @@ const ItemDetail = ({ id, name, price, img, sinopsis, stock }) => {
                         <Link to={'/'} className='toCart' >Seguir comprando</Link>
                     </div>
                     :
-                    <Counter initial={1} stock={stock} onAdd={handleOnAdd} />
+                    null
                 }
             </div>
         </div>

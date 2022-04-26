@@ -1,3 +1,7 @@
 .itemDetailContainer{
     padding: 15px;
 }
+
+.itemDetailContainerText{
+    color: #94b8ff;
+}
