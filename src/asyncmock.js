@@ -2,7 +2,7 @@ const products = [
     {
         id: '1',
         category: 'romance',
-        img: require('./productsImgs/orgullo-y-prejuicio.jpg'),
+        img: './productsImgs/orgullo-y-prejuicio.jpg',
         name: 'Orgullo y Prejuicio',
         author: 'Jane Austen',
         price: 1200,
@@ -12,7 +12,7 @@ const products = [
     {
         id: '2',
         category: 'fantasia',
-        img:require('./productsImgs/harry-potter.jpg'),
+        img: './productsImgs/harry-potter.jpg',
         name:'Harry Potter y la Piedra Filosofal',
         author:'J. K. Rowling',
         price:1450,
@@ -22,7 +22,7 @@ const products = [
     {
         id: '3',
         category: 'romance',
-        img:require('./productsImgs/caballo-de-fuego-paris.png'),
+        img: './productsImgs/caballo-de-fuego-paris.png',
         name:'Caballo de Fuego I: París',
         author:'Florencia Bonelli',
         price:1300,
@@ -32,7 +32,7 @@ const products = [
     {
         id: '4',
         category: 'no-ficcion',
-        img: require('./productsImgs/el-diario-de-ana-frank.jpg'),
+        img: './productsImgs/el-diario-de-ana-frank.jpg',
         name:'El Diario de Ana Frank',
         author:'Ana Frank',
         price:1100,
