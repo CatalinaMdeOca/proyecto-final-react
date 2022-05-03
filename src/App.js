@@ -7,6 +7,7 @@ import { useState, useContext } from 'react';
 import { CartContextProvider } from './context/CartContext';
 import CartContext from './context/CartContext';
 import Cart from './components/Cart/Cart';
+import Form from './components/Form/Form';
 
 
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path='/detail/:productId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/order' element={<Form />} />
             <Route path='*' element={<h1>ERROR 404</h1>} />
           </Routes>
         </BrowserRouter>

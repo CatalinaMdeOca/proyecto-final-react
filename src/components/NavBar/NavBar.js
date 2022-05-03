@@ -20,18 +20,12 @@ const NavBar = () => {
             })
             setCategories(categories)
         })
-    })
+    }, [])
 
     return (
         <div className="navDiv">
             <nav className="navBar">
                 <h2><Link to='/' className="navBrand">Libros CM</Link></h2>
-                {/* <ul>
-                    <li className="navItem"><Link to='/' className="navLink">Todos</Link></li>
-                    <li className="navItem"><Link to='/' className="navLink">Romance</Link></li>
-                    <li className="navItem"><Link to='/' className="navLink">Fantasía</Link></li>
-                    <li className="navItem">Terror</li>
-                </ul> */}
                 
                 <div>
                     <NavLink to='/' className="navLink">Todos</NavLink>

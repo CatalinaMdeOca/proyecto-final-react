@@ -26,7 +26,6 @@ const ItemDetail = ({ id, name, price, img, sinopsis, stock }) => {
                 <h5>$ { price }</h5>
                 <p>{sinopsis}</p>
                 <Counter initial={1} stock={stock} onAdd={handleOnAdd} />
-                {/* { isInCart(id) ? <Link to={`/cart`} className='toCart' > Ir al carrito </Link> : <Counter initial={1} stock={stock} onAdd={handleOnAdd} /> } */}
                 { isInCart(id) ?  
                     <div>
                         <Link to={'/cart'} className='toCart' >Ir al Carrito</Link>

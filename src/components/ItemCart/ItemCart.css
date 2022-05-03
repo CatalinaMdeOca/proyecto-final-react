@@ -1,0 +1,19 @@
+.cartCard{
+    background-color: #94b8ff;
+    color: #1e2127;
+    width: 350px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.buttonItemCart{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 18px;
+    background: #282c34;
+    color: #94b8ff;
+    border: solid #94b8ff 1.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
