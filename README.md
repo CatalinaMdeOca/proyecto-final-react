@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Libros CM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto desarrollado para el curso de React JS de Coderhouse. Su finalidad es mostrar un catálogo de productos y permitir la generación de una orden de compra.
 
-## Available Scripts
+## Instalación
 
-In the project directory, you can run:
+Para clonar el proyecto en su dispositivo, se deben ejecutar las siguientes líneas en la terminal:
 
-### `npm start`
+````sh
+git clone https://github.com/CatalinaMdeOca/proyecto-final-react.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm start
+````
 
-### `npm test`
+Dato: la URL que usarás para clonar el repositorio se encuentra en la página principal del repositorio, en el botón que dice "code".
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Breve descripción de los componentes
 
-### `npm run build`
+Al ingresar en la página, te encontrarás con la página de inicio, con la ruta "/". Aquí encontrarás el componente "NavBar", que muestra las categorías como links que permiten filtrar los productos por categoría, y el "ItemListContainer", que muestra una lista de items, donde cada "Item" es una card que muestra una breve información sobre un producto. Además, cada "Item" contiene un botón que dirige al "ItemDetailContainer".
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El "ItemDetailContainer" muestra, según el ID, el detalle ("ItemDetail") de un producto. El "ItemDetail" muestra una foto de la portada del libro sleccionado, su título, su autor, su precio, su sinopsis y la cantidad de ejemplares en stock. Además, muestra el "ItemCount" que permite seleccionar la cantidad de ejemplares que se desean añadir al carrito ("Cart"). Una vez agregado el producto, un botón permite navegar hacia el "Cart". También puede accederse al  Cart a través del "CartWidget", el ícono que se muestra en la "NavBar" cuando hay al menos un producto en el carrito.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+El carrito muestra un resumen de la compra, detallando por cada producto título, cantidad, precio unitario, subtotal, y un botón para eliminar el producto. Además hay un botón para vaciar el carrito y otro para finalizar la compra, que conduce al componente "Form". El componente "Form" solicita nombre, email y teléfono del comprador, información que se sube a firebase en la colección "orders", junto con la fecha y un resumen de la compra.

@@ -13,7 +13,7 @@ const CartWidget = () => {
     return(
         <div className='cartWidget'>
             <Link to={'/cart'} className='cartWidgetLink'>
-                <img className='icon' src='./images/cart-icon.svg' alt='cart' />
+                <img className='icon' src='../../productsImgs/cart-icon.svg' alt='cart' />
                 <p>{ getQuantity() }</p>
             </Link>
         </div> 

@@ -1,4 +1,3 @@
-import { getProductsById } from '../../asyncmock';
 import { useState, useEffect } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemDetailContainer.css';
@@ -8,24 +7,20 @@ import { getDoc, doc } from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
     const [productsById, setProductsById] = useState([]);
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     const { productId } = useParams();
 
     useEffect(() => {
-        // getProductsById(productId).then(prods => {
-        //     setProductsById(prods)
-        // }).catch(err => {
-        //     console.log(err)
-        // }).finally(() => {
-        //     setLoading(false)
-        // })
-
         getDoc(doc(firestoreDb, 'products', productId)).then(response => {
             console.log(response)
             const product = { id: response.id, ...response.data() }
             setProductsById(product)
-        })
+        }).catch(err => {
+                console.log(err)
+            }).finally(() => {
+                setLoading(false)
+            })
     }, [productId])
 
     return(

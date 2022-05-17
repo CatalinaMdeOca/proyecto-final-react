@@ -27,6 +27,7 @@ const Cart = () => {
             </ul>
             <p className="cartTotalPrice">Precio total: $ {precioTotal(cart)}</p>
             <button  className="cartButton"><Link to={'/order'} className="cartLink" >Finalizar compra</Link></button>
+            <button  className="cartButton" onClick={() => clearCart()}>Vaciar Carrito</button>
         </div>
     )
 }
