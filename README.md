@@ -50,4 +50,4 @@ El carrito muestra un resumen de la compra, detallando por cada producto título
 
 ## Visualización de la página en el navegador
 
-![]([reactApp.gif](https://github.com/CatalinaMdeOca/proyecto-final-react/blob/master/src/productsImgs/reactApp.gif))
+![reactApp.gif](https://github.com/CatalinaMdeOca/proyecto-final-react/blob/master/src/productsImgs/reactApp.gif)
